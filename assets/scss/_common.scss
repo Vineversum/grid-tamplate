@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    font-size: $font-size;
+    font-family: $font-main;
+}
+a {
+    text-decoration: none;
+    color: $color-light;
+}
+h1 {
+    color: $color-light;
+    font-family: $font-header;
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-size: 3.75rem;
+}
+ul {
+    list-style: none;
+    
+}
+.button {
+    border: 2px solid $color-light;
+    letter-spacing: 3px;
+    background-color: rgba(#ffffff, 0.1);
+    transition: background-color 0.5s;
+    &:hover,
+    &:active {
+        background-color: $color-accent;
+    }
+}
