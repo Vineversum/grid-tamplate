@@ -18,13 +18,3 @@ ul {
     list-style: none;
     
 }
-.button {
-    border: 2px solid $color-light;
-    letter-spacing: 3px;
-    background-color: rgba(#ffffff, 0.1);
-    transition: background-color 0.5s;
-    &:hover,
-    &:active {
-        background-color: $color-accent;
-    }
-}
