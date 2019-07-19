@@ -1,0 +1,38 @@
+.form {
+    background-color: $color-main;
+
+    form {
+        padding: 30px 15px;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        input {
+            color: $color-light;
+            background-color: #38405a;
+            padding: 20px 30px;
+            border: none;
+            border-bottom: 1px solid #4c546b;
+            outline: none;
+            &::placeholder {
+                color: $color-light;
+            }
+        }
+        button {
+            color: $color-light;
+            background-color: $color-gray-dark;
+            padding: 20px 30px;
+            letter-spacing: 3px;
+            border: none;
+            border-bottom: 1px solid #72788a;
+            outline: none;
+            transition: background-color 0.5s;
+            &:hover,
+            &:active {
+                background-color: $color-accent;
+            }
+        }
+    }
+}
