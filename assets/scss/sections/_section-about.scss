@@ -32,3 +32,34 @@
     margin: 0 auto;
     padding: 100px 15px 80px 15px;
 }
+@include lg-md {
+    .about-description p:nth-child(4) {
+        display: none;
+    }
+}
+@include md-sm {
+    .about-description p:nth-child(3),
+    .about-description p:nth-child(4) {
+        display: none;
+    }
+}
+@include sm {
+    .about-description p:nth-child(4) {
+        display: none;
+    }
+    .about-container {
+        grid-auto-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "ttl" "dcr" "img";
+        justify-items: center;
+        grid-column-gap: 0;
+    }
+    .about-title {
+        text-align: center;
+    }
+    .about-image {
+        &::before {
+            display: none;
+        }
+    }
+}

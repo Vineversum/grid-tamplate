@@ -5,7 +5,6 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    // grid-template-rows: 33% 33% 33%;
     grid-template-areas: "html html css mrk"
                          "wdsg qa qa cod"
                          "adpt php seo cod";
@@ -105,7 +104,7 @@
 .skills-button {
     background-color: $color-gray-dark;
     border: 2px solid $color-main;
-    padding: 20px 65px;
+    padding: 20px 90px;
     margin-top: 20px;
     letter-spacing: 3px;
     transition: background-color 0.5s;
@@ -114,4 +113,40 @@
         &:active {
             background-color: $color-accent;
         }
+}
+
+@include lg-md {
+    .skills-container {
+        height: 160vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "html html css"
+                             "mrk wdsg wdsg"
+                             "qa qa cod"
+                             "adpt php cod"
+                             " adpt seo seo";
+    }   
+}
+
+@include md-sm {
+    .skills-container {
+        height: 200vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "html css"
+                             "mrk css"
+                             "wdsg wdsg"
+                             "qa cod"
+                             "qa adpt"
+                             "php seo";
+    }
+}
+
+@include sm {
+    .skills-container {
+        height: 300vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, auto);
+        grid-template-areas: "html" "css" "mrk" "wdsg" "qa" "cod" "adpt" "php" "seo";
+        grid-gap: 0;
+        grid-row-gap: 10px;
+    }
 }

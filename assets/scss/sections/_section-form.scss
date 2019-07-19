@@ -20,7 +20,14 @@
                 color: $color-light;
             }
         }
+        input[type="text"] {
+            grid-area: txt;
+        }
+        input[type="email"] {
+            grid-area: eml;
+        }
         button {
+            grid-area: btn;
             color: $color-light;
             background-color: $color-gray-dark;
             padding: 20px 30px;
@@ -34,5 +41,18 @@
                 background-color: $color-accent;
             }
         }
+    }
+}
+
+@include md-sm {
+    .form form {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "txt txt" "eml btn";
+    }
+}
+@include sm {
+    .form form {
+        grid-template-columns: 1fr;
+        grid-template-areas: "txt" "eml" "btn";
     }
 }

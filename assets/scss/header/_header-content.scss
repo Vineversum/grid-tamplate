@@ -7,6 +7,11 @@
         text-align: center;
         margin-top: 0;
         margin-bottom: 65px;
+        color: $color-light;
+    font-family: $font-header;
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-size: 3.75rem;
     }
     &__buttons {
         display: flex;
@@ -25,3 +30,37 @@
         }
     }
 }
+
+@include lg-md {
+    .header-content {
+        &__button {
+            padding: 15px 40px;
+            font-size: 14px;
+        }
+        &__title {
+            font-size: 2.25rem;
+        }
+    }
+}
+@include md-sm {
+    .header-content {
+        &__button {
+            padding: 10px 25px;
+            font-size: 12px;
+        }
+        &__title {
+            font-size: 1.5rem;
+        }
+    }
+}
+@include sm {
+    .header-content {
+        &__button {
+            padding: 10px 25px;
+            font-size: 12px;
+        }
+        &__title {
+            font-size: 1.5rem;
+        }
+    }
+}   
