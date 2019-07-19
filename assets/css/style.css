@@ -911,8 +911,9 @@ h2 {
     display: -ms-grid;
     display: grid;
     grid-gap: 20px;
-    -ms-grid-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "txt eml btn";
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
@@ -932,10 +933,16 @@ h2 {
       .form form input::placeholder {
         color: #ffffff; }
     .form form input[type="text"] {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
       grid-area: txt; }
     .form form input[type="email"] {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
       grid-area: eml; }
     .form form button {
+      -ms-grid-row: 1;
+      -ms-grid-column: 5;
       grid-area: btn;
       color: #ffffff;
       background-color: #44596e;

@@ -8,6 +8,7 @@
         display: grid;
         grid-gap: 20px;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "txt eml btn";
         justify-content: space-between;
         input {
             color: $color-light;
