@@ -2,7 +2,7 @@
     background-color: $color-main;
 
     form {
-        padding: 30px 15px;
+        padding: 30px 20px;
         max-width: 1300px;
         margin: 0 auto;
         display: grid;
@@ -12,13 +12,32 @@
         justify-content: space-between;
         input {
             color: $color-light;
+            font-size: 17px;
+            font-weight: 500;
+            letter-spacing: 2.5px;
             background-color: #38405a;
             padding: 20px 30px;
             border: none;
-            border-bottom: 1px solid #4c546b;
+            border-bottom: 2px solid #4c546b;
             outline: none;
+            font-size: 16px;
             &::placeholder {
-                color: $color-light;
+                color: #9da1ae;
+                font-size: 17px;
+                font-weight: 500;
+                letter-spacing: 2.5px;
+            }
+            &:focus,
+            &:hover {
+                border: 2px solid #5e657a;
+                border-bottom: 2px solid white;
+                background-color: #4c546b;
+                padding: 18px 28px 20px 28px;
+                transition-duration: 0.5s;
+                &::placeholder {
+                    color: white;
+                    transition-duration: 0.5s;
+                }
             }
         }
         input[type="text"] {
@@ -26,34 +45,52 @@
         }
         input[type="email"] {
             grid-area: eml;
+            
         }
         button {
             grid-area: btn;
             color: $color-light;
-            background-color: $color-gray-dark;
-            padding: 20px 30px;
-            letter-spacing: 3px;
+            background-color: #4c546b;
+            padding: 19px 30px 20px 30px;
+            font-size: 17px;
+            font-weight: 500;
+            letter-spacing: 2.5px;
             border: none;
-            border-bottom: 1px solid #72788a;
+            border-bottom: 2px solid #72788a;
             outline: none;
             transition: background-color 0.5s;
             &:hover,
             &:active {
                 background-color: $color-accent;
+                border: 2px solid $color-light;
+                padding: 17px 30px 20px 30px;
             }
         }
     }
 }
-
+@include lg-md {
+    .form form {
+        padding: 20px 20px;
+    }
+}
 @include md-sm {
     .form form {
+        padding: 20px 20px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "txt txt" "eml btn";
     }
 }
 @include sm {
     .form form {
+        padding: 22px;
         grid-template-columns: 1fr;
         grid-template-areas: "txt" "eml" "btn";
+        input {
+            padding: 20px 10px;
+        }
+        input::placeholder {
+            padding: 0 5px;
+        }
     }
+    
 }

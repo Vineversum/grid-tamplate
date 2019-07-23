@@ -2,7 +2,7 @@
     background-color: $color-main;
     margin-top: 100px;
     &-title {
-        padding: 30px 0 70px 0;
+        padding: 35px 0 70px 0;
         &-top {
             text-align: center;
             color: $color-gray;
@@ -20,12 +20,12 @@
 .socials {
     display: flex;
     justify-content: center;
-    padding: 50px 0 26px 0;
+    padding: 47px 0 26px 0;
     position: relative;
     &::after {
         content: "";
         position: absolute;
-        bottom: 0;
+        bottom: -5px;
         left: 48%;
         right: 48%;
         border-bottom: 1px solid $color-gray-dark;
@@ -43,5 +43,39 @@
             transition-duration: 0.5s;
             color: $color-accent;
         } 
+    }
+}
+
+@include lg-md {
+    .footer {
+        margin-top: 80px;
+    }
+    .socials::after {
+        left: 46%;
+        right: 46%;
+    }
+}
+@include md-sm {
+    .footer {
+        margin-top: 60px;
+    }
+    .socials {
+        padding: 60px 0 26px 0;
+    }
+    .socials::after {
+        left: 45%;
+        right: 45%;
+    }
+}
+@include sm {
+    .footer {
+        margin-top: 60px;
+    }
+    .socials {
+        padding: 55px 0 26px 0;
+    }
+    .socials::after {
+        left: 44%;
+        right: 44%;
     }
 }

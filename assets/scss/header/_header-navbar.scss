@@ -1,20 +1,58 @@
 .header-navbar {
     &__list {
         display: grid;
+        width: 100%;
         grid-template-columns: repeat(3, auto);
         justify-content: end;
+        padding: 0px 15px 0px 15px;
+        position: relative;
+        margin: 0;
     }
     &__item {
         a {
-            font-size: 1.1rem; 
+            padding: 15px;
+            display: block;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-size: 17px; 
             letter-spacing: 2px;
-            padding: 19px;
             transition: color 0.5s;
+            font-weight: 400;
+            margin: 0 0 0 6px;
             &:hover,
             &:active {
                 color: $color-accent;
             }
         }
     }
+    .fas {
+        display: none;
+        margin-right: 20px;
+        text-align: end;
+        color: $color-light;
+        font-size: 30px;
+        position: absolute;
+        right: 0;
+        top: calc(50% - 15px);
+    }
+}
 
+@include md {
+    .header-navbar__list {
+        grid-template-columns: auto;
+        position: absolute;
+        top: 97px;
+        right: 0;
+        margin: 0 20px;
+        padding: 0;
+        
+    }
+    .header-navbar__item {
+        text-align: end;
+        a {
+            background-color: rgba($color-gray-dark, 0.9); 
+        }
+    }
 }

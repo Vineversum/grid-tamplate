@@ -7,9 +7,7 @@ a {
     text-decoration: none;
     color: $color-light;
 }
-h1 {
-    
-}
+
 ul {
     list-style: none;
     
@@ -17,16 +15,12 @@ ul {
 h2 {
     font-size: 2.5rem;
     font-family: $font-header;
-    letter-spacing: 4px;
+    letter-spacing: 0.1em;
     color: $color-main;
 }
-@include lg-md {
+@include md-sm {
     h2 {
-        font-size: 1.8rem;
-    }
-}
-@include md {
-    h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+        line-height: 1.3em;
     }
 }

@@ -2,7 +2,7 @@
     max-width: 1300px;
     // min-height: 1120px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 0px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
@@ -55,6 +55,9 @@
     &-title {
         align-self: end;
         color: $color-gray;
+        font-family: $font-header;
+        font-size: 18px;
+        letter-spacing: 1px;
         
     }
     &-description {
@@ -63,6 +66,7 @@
         padding: 0 20px;
         font-size: 1rem;
         margin-top: 0;
+        line-height: 1.3em;
     }
     &:active, &:hover {
         .post-title,
@@ -81,22 +85,22 @@
     }
 }
 .posts {
-    // display: grid;
-    h2 {
+    padding: 0 20px;
+    &-title {
         max-width: 1300px;
-        margin: 100px auto 50px auto;
-        padding: 0 15px;
+        margin: 100px auto 55px auto;
+        padding: 0 0px;
     }
     &-button-container {
         display: flex;
         justify-content: center;
     }
     &-button {
-        background-color: $color-gray-dark;
+        background-color: #575e73;
         border: 2px solid $color-main;
-        padding: 20px 90px;
+        padding: 19px 96px 19px 96px;
+        letter-spacing: 2.5px;
         margin-top: 20px;
-        letter-spacing: 3px;
         transition: background-color 0.5s;
         // justify-self: center; 
             &:hover,
@@ -114,19 +118,44 @@
                              "p3 p4 p4"
                              "p5 p5 p6";
     }
+    .posts {
+        &-title {
+            margin: 80px auto 43px auto;
+        }
+
+    }
 }
 @include md-sm {
     .posts-container {
-        height: 200vh;
+        height: 180vh;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
     }
+    .posts {
+        padding: 0 22px;
+        &-title {
+            margin: 60px auto 30px auto;
+        }
+
+    }
 }
 @include sm {
+    .post {
+        padding: 0 22px;
+    }
     .posts-container {
         height: 250vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
         grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
+    }
+    .posts-title {
+        margin: 60px 0 35px 0;
+        font-size: 24px;
+        text-align: center;
+    }
+    .posts-button {
+        width: 100%;
+        text-align: center;
     }
 }

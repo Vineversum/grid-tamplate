@@ -62,8 +62,9 @@
         left: 0;
         right: 0;
         color: $color-light;
-        font-size: 1.1rem; 
-        letter-spacing: 3px;
+        font-size: 1.2rem; 
+        letter-spacing: 2.5px;
+        font-weight: 600;
         font-weight: bold;
         display: flex;
         align-items: center;
@@ -102,11 +103,11 @@
     } 
 }
 .skills-button {
-    background-color: $color-gray-dark;
+    background-color: #575e73;
     border: 2px solid $color-main;
-    padding: 20px 90px;
-    margin-top: 20px;
-    letter-spacing: 3px;
+    padding: 19px 96px 19px 96px;
+    margin-top: 10px;
+    letter-spacing: 2.5px;
     transition: background-color 0.5s;
     justify-self: center; 
         &:hover,
@@ -125,6 +126,9 @@
                              "adpt php cod"
                              " adpt seo seo";
     }   
+    .skills-button {
+        padding: 22px 97px;
+    }
 }
 
 @include md-sm {
@@ -143,10 +147,18 @@
 @include sm {
     .skills-container {
         height: 300vh;
+        padding: 22px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(9, auto);
         grid-template-areas: "html" "css" "mrk" "wdsg" "qa" "cod" "adpt" "php" "seo";
         grid-gap: 0;
-        grid-row-gap: 10px;
+        grid-row-gap: 20px;
+    }
+    .skills-button {
+        width: calc(100% - 44px);
+        margin: 0 22px;
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 2px;
     }
 }
