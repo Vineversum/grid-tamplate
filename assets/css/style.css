@@ -511,7 +511,9 @@ h3 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-position: 50% 50%; }
+  text-align: center;
+  background-position: 50% 50%;
+  padding: 0 20px; }
 
 .header-overlay {
   background-color: #2d3651;
@@ -524,24 +526,27 @@ h3 {
   z-index: 1; }
 
 .header-menu {
+  width: 100%;
   z-index: 2;
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 1fr;
-  grid-template-columns: auto 1fr;
-  padding: 15px 20px;
-  max-width: 1323px;
-  margin: 0px auto;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  right: 0; }
+  .header-menu__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1fr;
+    grid-template-columns: auto 1fr;
+    padding: 15px 0px 15px 0px;
+    max-width: 1300px;
+    margin: 0px auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 .header-logo {
-  position: relative; }
+  position: relative;
+  margin-left: 8px; }
   .header-logo__link {
     display: block;
     font-size: 1.5rem;
@@ -556,7 +561,8 @@ h3 {
 .header-navbar {
   display: -ms-grid;
   display: grid;
-  justify-items: end; }
+  justify-items: end;
+  margin-right: -11px; }
   .header-navbar__list {
     display: -ms-grid;
     display: grid;
@@ -569,23 +575,22 @@ h3 {
     padding: 0;
     position: relative;
     margin: 0;
-    margin-right: -5px; }
+    margin-right: -20px; }
   .header-navbar__item {
-    width: 93px; }
+    height: 100%; }
     .header-navbar__item a {
-      padding: 15px 15px 14px;
+      padding: 20px 20px 19px 20px;
       display: block;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
-      font-size: 17px;
-      letter-spacing: 2px;
+      font-size: 18px;
+      letter-spacing: 1.5px;
       -webkit-transition: color 0.5s;
       -o-transition: color 0.5s;
       transition: color 0.5s;
-      font-weight: 400;
-      margin: 0 0 0 6px; }
+      font-weight: 400; }
       .header-navbar__item a:hover, .header-navbar__item a:active {
         color: #d66926; }
   .header-navbar__hamburger {
