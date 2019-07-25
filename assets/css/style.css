@@ -1291,9 +1291,11 @@ h3 {
 
 .posts {
   padding: 100px 20px; }
-  .posts-title {
+  .posts h2 {
     max-width: 1300px;
-    padding: 0; }
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto; }
   .posts__button {
     display: -webkit-box;
     display: -ms-flexbox;
