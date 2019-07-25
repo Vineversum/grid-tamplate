@@ -6,11 +6,12 @@
     grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
-    height: 95vh;
+    height: 120vh;
 }
 .post {
     position: relative;
     overflow: hidden;
+    
 
     &:nth-of-type(1){
         grid-area: p1;
@@ -41,6 +42,7 @@
     }
     &-about {
         position: absolute;
+        padding: 20px;
         top: 55%;
         left: 0;
         right: 0;
@@ -53,7 +55,6 @@
         }
         p {
             align-self: start;
-            padding: 0 20px;
             margin-top: 0;
         }
     }
@@ -108,7 +109,7 @@
         padding: 60px 22px;
     }
     .posts__container {
-        height: 180vh;
+        height: 250vh;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
     }
@@ -118,7 +119,7 @@
         padding: 60px 22px;
     }
     .posts__container {
-        height: 250vh;
+        height: 300vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
         grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";

@@ -1210,7 +1210,7 @@ h3 {
   grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: auto 20px auto;
   grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
-  height: 95vh; }
+  height: 120vh; }
 
 .post {
   position: relative;
@@ -1251,6 +1251,7 @@ h3 {
     background-size: cover; }
   .post-about {
     position: absolute;
+    padding: 20px;
     top: 55%;
     left: 0;
     right: 0;
@@ -1267,7 +1268,6 @@ h3 {
       -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
-      padding: 0 20px;
       margin-top: 0; }
   .post:active .post-title,
   .post:active .post-description, .post:hover .post-title,
@@ -1342,7 +1342,7 @@ h3 {
   .posts {
     padding: 60px 22px; }
   .posts__container {
-    height: 180vh;
+    height: 250vh;
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto 20px auto 20px auto;
@@ -1374,7 +1374,7 @@ h3 {
   .posts {
     padding: 60px 22px; }
   .posts__container {
-    height: 250vh;
+    height: 300vh;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     -ms-grid-rows: auto 20px auto 20px auto 20px auto 20px auto 20px auto;
