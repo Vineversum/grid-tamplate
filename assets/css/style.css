@@ -534,7 +534,7 @@ h3 {
   -ms-grid-columns: auto 1fr;
   grid-template-columns: auto 1fr;
   padding: 15px 20px;
-  max-width: 1340px;
+  max-width: 1323px;
   margin: 0px auto;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -569,23 +569,25 @@ h3 {
     padding: 0;
     position: relative;
     margin: 0;
-    margin-right: -15px; }
-  .header-navbar__item a {
-    padding: 15px;
-    display: block;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-size: 17px;
-    letter-spacing: 2px;
-    -webkit-transition: color 0.5s;
-    -o-transition: color 0.5s;
-    transition: color 0.5s;
-    font-weight: 400;
-    margin: 0 0 0 6px; }
-    .header-navbar__item a:hover, .header-navbar__item a:active {
-      color: #d66926; }
+    margin-right: -5px; }
+  .header-navbar__item {
+    width: 93px; }
+    .header-navbar__item a {
+      padding: 15px 15px 14px;
+      display: block;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      font-size: 17px;
+      letter-spacing: 2px;
+      -webkit-transition: color 0.5s;
+      -o-transition: color 0.5s;
+      transition: color 0.5s;
+      font-weight: 400;
+      margin: 0 0 0 6px; }
+      .header-navbar__item a:hover, .header-navbar__item a:active {
+        color: #d66926; }
   .header-navbar__hamburger {
     position: absolute;
     right: 20px;
