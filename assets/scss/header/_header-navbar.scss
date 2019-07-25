@@ -1,4 +1,6 @@
 .header-navbar {
+    display: grid;
+    justify-items: end;
     &__list {
         display: grid;
         width: 100%;
@@ -7,6 +9,7 @@
         padding: 0;
         position: relative;
         margin: 0;
+        margin-right: -15px;
     }
     &__item {
         a {
