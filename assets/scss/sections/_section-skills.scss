@@ -1,21 +1,21 @@
 .skills {
-    display: grid;
+    padding: 10px 10px 40px 10px;
+    &__container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "html html css mrk"
+                             "wdsg qa qa cod"
+                             "adpt php seo cod";
+        grid-gap: 10px;
+        padding-bottom: 22px;
+    }
 }
-.skills-container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "html html css mrk"
-                         "wdsg qa qa cod"
-                         "adpt php seo cod";
-    grid-gap: 10px;
-    padding: 10px;
-}
+
 .skill-item {
     position: relative;
     overflow: hidden;
     
-
     &:nth-of-type(1){
         grid-area: html;
     }
@@ -62,10 +62,8 @@
         left: 0;
         right: 0;
         color: $color-light;
-        font-size: 1.2rem; 
-        letter-spacing: 2.5px;
-        font-weight: 600;
-        font-weight: bold;
+        letter-spacing: 0.1em;
+        font-weight: 700;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -84,7 +82,6 @@
         background-position: 50% 50%;
         background-size: cover;
     }
-
     &:active,
     &:hover {
         .skill-item__title {
@@ -102,22 +99,16 @@
         }
     } 
 }
-.skills-button {
-    background-color: #575e73;
-    border: 2px solid $color-main;
-    padding: 19px 96px 19px 96px;
-    margin-top: 10px;
-    letter-spacing: 2.5px;
-    transition: background-color 0.5s;
-    justify-self: center; 
-        &:hover,
-        &:active {
-            background-color: $color-accent;
-        }
+.skills__button {
+    display: flex;
+    justify-content: center;
+    .button-dark {
+        min-width: 350px;
+    }
 }
 
 @include lg-md {
-    .skills-container {
+    .skills__container {
         height: 160vh;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "html html css"
@@ -126,13 +117,11 @@
                              "adpt php cod"
                              " adpt seo seo";
     }   
-    .skills-button {
-        padding: 22px 97px;
-    }
+    
 }
 
 @include md-sm {
-    .skills-container {
+    .skills__container {
         height: 200vh;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "html css"
@@ -145,20 +134,34 @@
 }
 
 @include sm {
-    .skills-container {
-        height: 300vh;
+    .skills {
         padding: 22px;
+    }
+    .skills__container {
+        height: 300vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(9, auto);
         grid-template-areas: "html" "css" "mrk" "wdsg" "qa" "cod" "adpt" "php" "seo";
         grid-gap: 0;
         grid-row-gap: 20px;
     }
-    .skills-button {
-        width: calc(100% - 44px);
-        margin: 0 22px;
+    .skills__button .button-grey {
+        width: 100%;
         text-align: center;
-        font-size: 18px;
-        letter-spacing: 2px;
+    }
+}
+
+@include md-min {
+    .skill-item {
+        &__title {
+            font-size: 1.25rem; 
+        }
+    }
+}
+@include md {
+    .skill-item {
+        &__title {
+            font-size: 1.15rem;
+        }
     }
 }

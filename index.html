@@ -20,7 +20,11 @@
         <a href="#" class="header-logo__link"><span class="accent">SITE</span>LOGO</a>
       </div>
       <div class="header-navbar">
-        <i class="fas fa-bars"></i>
+        <div class="header-navbar__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <ul class="header-navbar__list">
           <li class="header-navbar__item"><a href="#">Home</a></li>
           <li class="header-navbar__item"><a href="#">About</a></li>
@@ -31,14 +35,14 @@
     <div class="header-content">
       <h1 class="header-content__title">WE ARE REAL WEB-DEVELOPERS</h1>
       <div class="header-content__buttons">
-        <a href="#" class="header-content__button button">Learn more</a>
-        <a href="#" class="header-content__button button">Get started</a>
+        <a href="#" class="header-content__button button-light">Learn more</a>
+        <a href="#" class="header-content__button button-light">Get started</a>
       </div>
     </div>
   </header>
 
   <section class="skills">
-    <div class="skills-container">
+    <div class="skills__container">
       <div class="skill-item">
         <div class="skill-item__overlay"></div>
         <div style="background-image: url(assets/img/img-html.png)" class="skill-item__image"></div>
@@ -95,77 +99,81 @@
       </div>
     </div>
 
-    <a href="#" class="skills-button">View all skills...</a>
+    <div class="skills__button">
+        <a href="#" class="button-dark">View all skills...</a>
+    </div>
   </section>
 
   <section class="about">
-    <div class="about-container">
-      <h2 class="about-title">Are You Ready?<br>Let's start!</h2>
-      <div class="about-description">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio unde labore facilis voluptatem eum, quod deleniti ex cum quisquam? Earum assumenda inventore ducimus amet accusantium error fugit libero quas et!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In atque ratione provident. Obcaecati, ipsam suscipit! Tempora facilis, adipisci accusamus ad odit saepe enim aliquid unde in vitae inventore animi tempore minima debitis voluptatem at qui doloremque voluptas fugit nemo soluta, rerum cum sint atque! Vel necessitatibus officiis dolores mollitia a?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis totam corrupti? Quas ipsa doloribus eveniet consequatur vitae molestiae, temporibus in cum dolorum excepturi modi suscipit distinctio doloremque quis fugit, rem cupiditate sequi? Molestias labore nostrum ratione temporibus numquam, quod qui, reprehenderit blanditiis tenetur, non quidem! Optio ab eum at.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis optio asperiores voluptates eum alias fugiat nesciunt dolorum molestias provident laboriosam consequatur perferendis, assumenda ipsam doloribus ad nobis voluptate expedita? Error.</p>
+    <div class="about__container">
+      <div class="about-article">
+        <h2>Are You Ready?<br>Let's start!</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio unde labore facilis voluptatem eum, quod deleniti ex cum quisquam? Earum assumenda inventorducimus amet accusantium error fugit libero quas et!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In atque ratione provident. Obcaecati, ipsam suscipit! Tempora facilis, adipisci accusamus ad odit saepenim aliquid unde in vitae inventore animi tempore minima debitis voluptatem at qui doloremque voluptas fugit nemo soluta, rerum cum sint atque! Vel necessitatibuofficiis dolores mollitia a?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis totam corrupti? Quas ipsa doloribus eveniet consequatur vitae molestiae, temporibus icum dolorum excepturi modi suscipit distinctio doloremque quis fugit, rem cupiditate sequi? Molestias labore nostrum ratione temporibus numquam, quod quireprehenderit blanditiis tenetur, non quidem! Optio ab eum at.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis optio asperiores voluptates eum alias fugiat nesciunt dolorum molestias provident laboriosaconsequatur perferendis, assumenda ipsam doloribus ad nobis voluptate expedita? Error.</p>
       </div>
-      <div class="about-image"><img src="assets/img/img-lamp-webdev.png" alt="img"></div>
+      <div class="about-image">
+        <img src="assets/img/img-lamp-webdev.png" alt="img">
+      </div>
     </div>
   </section>
 
   <section class="form">
-    <form action="URL">
+    <form class="form__container" action="URL">
       <input type="text" placeholder="Your name...">
       <input type="email" placeholder="Your email...">
-      <button type="submit">Subscribe</button>
+      <button class="button-dark" type="submit">Subscribe</button>
     </form>
   </section>
 
   <section class="posts">
-    <h2 class="posts-title">Some section of posts</h2>
-    <div class="posts-container">
+    <h2>Some section of posts</h2>
+    <div class="posts__container">
       <a href="#" class="post">
         <div class="post-image" style="background-image: url(assets/img/img-post-1.png)"></div>
         <div class="post-about">
-          <h3 class="post-title">Lorem, ipsum dolor.</h3>
-          <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim esse rerum ipsam, quod hic deserunt saepe quibusdam a!</p>
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim esse rerum ipsam, quod hic deserunt saepe quibusdam a!</p>
         </div>
       </a>
       <a href="#" class="post">
         <div class="post-image" style="background-image: url(assets/img/img-post-2.png)"></div>
         <div class="post-about">
-          <h3 class="post-title">Lorem ipsum dolor sit.</h3>
-          <p class="post-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, accusamus dicta vel tempora itaque harum illo ratione. Alias itaque iusto quia.</p>
+          <h3>Lorem ipsum dolor sit.</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, accusamus dicta vel tempora itaque harum illo ratione. Alias itaque iusto quia.</p>
         </div>
       </a>
       <a href="#" class="post">
         <div class="post-image" style="background-image: url(assets/img/img-post-3.png)"></div>
         <div class="post-about">
-          <h3 class="post-title">Lorem ipsum dolor sit amet.</h3>
-          <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur alias totam molestias quod, numquam animi quam placeat omnis modi fugit cupiditate sit.</p>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur alias totam molestias quod, numquam animi quam placeat omnis modi fugit cupiditate sit.</p>
         </div>
       </a>
       <a href="#" class="post">
         <div class="post-image" style="background-image: url(assets/img/img-post-4.png)"></div>
         <div class="post-about">
-          <h3 class="post-title">Lorem, ipsum dolor.</h3>
-          <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quia vitae dolor doloribus aperiam nemo repudiandae, obcaecati accusamus molestias nobis?</p>
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quia vitae dolor doloribus aperiam nemo repudiandae, obcaecati accusamus molestias nobis?</p>
         </div>
       </a>
       <a href="#" class="post">
         <div class="post-image" style="background-image: url(assets/img/img-post-5.png)"></div>
         <div class="post-about">
-          <h3 class="post-title">Lorem ipsum dolor sit.</h3>
-          <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsum accusantium non vero recusandae reiciendis impedit, iure alias praesentium.</p>
+          <h3>Lorem ipsum dolor sit.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsum accusantium non vero recusandae reiciendis impedit, iure alias praesentium.</p>
         </div>
       </a>
       <a href="#" class="post">
         <div class="post-image" style="background-image: url(assets/img/img-post-6.png)"></div>
         <div class="post-about">
-          <h3 class="post-title">Lorem ipsum dolor sit amet.</h3>
-          <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, pariatur impedit assumenda vero eveniet qui esse tenetur optio?</p>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, pariatur impedit assumenda vero eveniet qui esse tenetur optio?</p>
         </div>
       </a>
     </div>
-    <div class="posts-button-container"><a href="#" class="posts-button">View all posts...</a></div>
+    <div class="posts__button"><a href="#" class="posts-button button-grey">View all posts...</a></div>
   </section>
 
   <footer class="footer">

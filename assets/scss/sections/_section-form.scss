@@ -1,8 +1,7 @@
 .form {
     background-color: $color-main;
-
-    form {
-        padding: 30px 20px;
+    padding: 30px 20px;
+    &__container {
         max-width: 1340px;
         margin: 0 auto;
         display: grid;
@@ -32,7 +31,8 @@
                 border: 2px solid #5e657a;
                 border-bottom: 2px solid white;
                 background-color: #4c546b;
-                padding: 18px 28px 20px 28px;
+                padding: 1px 20px;
+                width: 60px;
                 transition-duration: 0.5s;
                 &::placeholder {
                     color: white;
@@ -50,18 +50,13 @@
         button {
             grid-area: btn;
             color: $color-light;
-            background-color: #4c546b;
-            padding: 19px 30px 20px 30px;
-            font-size: 17px;
             font-weight: 500;
-            letter-spacing: 2.5px;
             border: none;
             border-bottom: 2px solid #72788a;
             outline: none;
             transition: background-color 0.5s;
             &:hover,
             &:active {
-                background-color: $color-accent;
                 border: 2px solid $color-light;
                 padding: 17px 30px 20px 30px;
             }
@@ -69,28 +64,25 @@
     }
 }
 @include lg-md {
-    .form form {
+    .form {
         padding: 20px 20px;
     }
 }
 @include md-sm {
-    .form form {
+    .form {
         padding: 20px 20px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "txt txt" "eml btn";
-    }
+        &__container {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "txt txt" "eml btn";
+        }
+    }  
 }
 @include sm {
-    .form form {
+    .form {
         padding: 22px;
-        grid-template-columns: 1fr;
-        grid-template-areas: "txt" "eml" "btn";
-        input {
-            padding: 20px 10px;
-        }
-        input::placeholder {
-            padding: 0 5px;
+        &__container {
+            grid-template-columns: 1fr;
+            grid-template-areas: "txt" "eml" "btn";
         }
     }
-    
 }

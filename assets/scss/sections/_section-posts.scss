@@ -1,12 +1,10 @@
-.posts-container {
+.posts__container {
     max-width: 1300px;
-    // min-height: 1120px;
     margin: 0 auto;
-    padding: 0 0px;
+    padding-bottom: 20px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
-    // grid-template-rows: 1fr 1fr;
     grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
     height: 95vh;
 }
@@ -50,24 +48,16 @@
         text-align: center;
         display: grid;
         background-color: $color-gray-light;
-        
+        h3 {
+            align-self: end;
+        }
+        p {
+            align-self: start;
+            padding: 0 20px;
+            margin-top: 0;
+        }
     }
-    &-title {
-        align-self: end;
-        color: $color-gray;
-        font-family: $font-header;
-        font-size: 18px;
-        letter-spacing: 1px;
-        
-    }
-    &-description {
-        align-self: start;
-        color: $color-gray;
-        padding: 0 20px;
-        font-size: 1rem;
-        margin-top: 0;
-        line-height: 1.3em;
-    }
+   
     &:active, &:hover {
         .post-title,
         .post-description {
@@ -85,73 +75,53 @@
     }
 }
 .posts {
-    padding: 0 20px;
+    padding: 100px 20px;
     &-title {
         max-width: 1300px;
-        margin: 100px auto 55px auto;
-        padding: 0 0px;
+        padding: 0;
     }
-    &-button-container {
+    &__button {
         display: flex;
         justify-content: center;
-    }
-    &-button {
-        background-color: #575e73;
-        border: 2px solid $color-main;
-        padding: 19px 96px 19px 96px;
-        letter-spacing: 2.5px;
-        margin-top: 20px;
-        transition: background-color 0.5s;
-        // justify-self: center; 
-            &:hover,
-            &:active {
-                background-color: $color-accent;
-            }
+        .button-dark {
+            min-width: 350px;
+        }
     }
 }
 
 @include lg-md {
-    .posts-container {
+    .posts {
+        padding: 80px 20px;
+    }
+    .posts__container {
         height: 200vh;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "p1 p1 p2"
                              "p3 p4 p4"
                              "p5 p5 p6";
     }
-    .posts {
-        &-title {
-            margin: 80px auto 43px auto;
-        }
-
-    }
 }
 @include md-sm {
-    .posts-container {
+    .posts {
+        padding: 60px 22px;
+    }
+    .posts__container {
         height: 180vh;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
     }
-    .posts {
-        padding: 0 22px;
-        &-title {
-            margin: 60px auto 30px auto;
-        }
-
-    }
 }
 @include sm {
-    .post {
-        padding: 0 22px;
+    .posts {
+        padding: 60px 22px;
     }
-    .posts-container {
+    .posts__container {
         height: 250vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
         grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
     }
-    .posts-title {
-        margin: 60px 0 35px 0;
-        font-size: 24px;
+    h2 {
         text-align: center;
     }
     .posts-button {

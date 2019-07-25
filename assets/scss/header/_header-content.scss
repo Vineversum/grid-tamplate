@@ -3,36 +3,22 @@
     position: relative;
     display: grid;
     justify-content: center;
-    margin-bottom: -117px;
-    margin-left: -2px;
+    padding: 0 20px;
     &__title {
         text-align: center;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 24px;
-        color: $color-light;
-        font-family: $font-header;
-        font-weight: 300;
-        letter-spacing: 4.8px;
-        font-size: 3.75rem;
+        margin: 0 0 53px;
     }
     &__buttons {
         display: flex;
         justify-content: center;
-        margin-top: 55px;
     }
     &__button {
-        margin: 0px 0px 0 20px;
-        padding: 18px 75px 18px 61px;
-        border: 2px solid $color-light;
-        letter-spacing: 2px;
-        font-size: 1.1rem;
-        background-color: rgba(#ffffff, 0.1);
-        transition: background-color 0.5s;
-        &:hover,
-        &:active {
-            background-color: $color-accent;
+        &:first-of-type {
+            margin-right: 20px;
         }
+        padding: 18px 69px;
+        font-size: 1.125rem;
+        letter-spacing: 0.1em;
     }
 }
 
@@ -40,15 +26,11 @@
     .header-content {
         &__button {
             padding: 15px 50px;
-            font-size: 16px;
-            letter-spacing: 1.5px;
+            font-size: 1rem;
+            letter-spacing: 0.1em;
         }
         &__title {
-            font-size: 2.5rem;
-            letter-spacing: 3.5px;
-        }
-        &__buttons {
-            margin-top: 42px;
+            margin-bottom: 43px;
         }
     }
 }
@@ -56,31 +38,23 @@
     .header-content {
         &__button {
             padding: 9px 35px;
-            font-size: 16px;
-            letter-spacing: 1.5px;
+            font-size: 1rem;
+            letter-spacing: 0.1em;
         }
         &__title {
-            font-size: 1.7rem;
-            letter-spacing: 4.1px;
-        }
-        &__buttons {
-            margin-top: 31px;
+            margin-bottom: 33px;
         }
     }
 }
 @include sm {
     .header-content {
         &__button {
-            padding: 9px 35px;
-            font-size: 16px;
-            letter-spacing: 1.5px;
+            padding: 9px 39px;
+            font-size: 1rem;
+            letter-spacing: 0.05em;
         }
         &__title {
-            font-size: 1.8rem;
-            letter-spacing: 3.5px;
-        }
-        &__buttons {
-            margin-top: 40px;
+            margin-bottom: 45px;
         }
     }
 }   
