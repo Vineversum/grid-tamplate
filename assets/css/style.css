@@ -1087,6 +1087,7 @@ h3 {
       background-color: #38405a;
       padding: 20px 30px;
       border: none;
+      border: 2px solid transparent;
       border-bottom: 2px solid #4c546b;
       outline: none;
       font-size: 16px; }
@@ -1114,8 +1115,6 @@ h3 {
         border: 2px solid #5e657a;
         border-bottom: 2px solid white;
         background-color: #4c546b;
-        padding: 1px 20px;
-        width: 60px;
         -webkit-transition-duration: 0.5s;
         -o-transition-duration: 0.5s;
         transition-duration: 0.5s; }
@@ -1149,14 +1148,14 @@ h3 {
       color: #ffffff;
       font-weight: 500;
       border: none;
+      border: 2px solid transparent;
       border-bottom: 2px solid #72788a;
       outline: none;
       -webkit-transition: background-color 0.5s;
       -o-transition: background-color 0.5s;
       transition: background-color 0.5s; }
       .form__container button:hover, .form__container button:active {
-        border: 2px solid #ffffff;
-        padding: 17px 30px 20px 30px; }
+        border: 2px solid #ffffff; }
 
 @media (max-width: 991px) and (min-width: 768px) {
   .form {
