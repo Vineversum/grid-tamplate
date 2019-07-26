@@ -6,12 +6,13 @@
     grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
-    height: 120vh;
+    grid-template-rows: auto auto;
 }
 .post {
     position: relative;
     overflow: hidden;
-    
+    display: grid;
+    grid-template-rows: 300px 1fr;
 
     &:nth-of-type(1){
         grid-area: p1;
@@ -32,24 +33,16 @@
         grid-area: p6;
     }
     &-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 45%;
         background-position: 50% 50%;
         background-size: cover;
     }
     &-about {
-        position: absolute;
-        padding: 20px;
-        top: 55%;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        position: relative;
+        z-index: 2;
         text-align: center;
         display: grid;
         background-color: $color-gray-light;
+        padding: 20px;
         h3 {
             align-self: end;
         }
@@ -86,9 +79,6 @@
     &__button {
         display: flex;
         justify-content: center;
-        .button-dark {
-            min-width: 350px;
-        }
     }
 }
 
@@ -97,8 +87,8 @@
         padding: 80px 20px;
     }
     .posts__container {
-        height: 200vh;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
         grid-template-areas: "p1 p1 p2"
                              "p3 p4 p4"
                              "p5 p5 p6";
@@ -109,8 +99,8 @@
         padding: 60px 22px;
     }
     .posts__container {
-        height: 250vh;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
         grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
     }
 }
@@ -119,7 +109,6 @@
         padding: 60px 22px;
     }
     .posts__container {
-        height: 300vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
         grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
@@ -127,7 +116,7 @@
     h2 {
         text-align: center;
     }
-    .posts-button {
+    .posts__button .button-dark {
         width: 100%;
         text-align: center;
     }

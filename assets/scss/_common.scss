@@ -95,3 +95,8 @@ h3 {
         font-size: 1.5rem;
     }
 }
+@include sm-min {
+    .button-dark {
+        min-width: 350px;
+    }
+}

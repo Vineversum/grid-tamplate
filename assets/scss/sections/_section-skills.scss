@@ -102,9 +102,6 @@
 .skills__button {
     display: flex;
     justify-content: center;
-    .button-dark {
-        min-width: 350px;
-    }
 }
 
 @include lg-md {
@@ -145,7 +142,7 @@
         grid-gap: 0;
         grid-row-gap: 20px;
     }
-    .skills__button .button-grey {
+    .skills__button .button-dark {
         width: 100%;
         text-align: center;
     }
