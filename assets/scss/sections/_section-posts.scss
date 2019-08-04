@@ -82,6 +82,7 @@
         margin-top: 20px;
         display: flex;
         justify-content: center;
+        padding: 0;
         a {
             display: block;
             min-width: 350px;
@@ -125,6 +126,7 @@
     }
     .posts__button .button-dark {
         width: 100%;
+        min-width: 0;
         text-align: center;
     }
 }
