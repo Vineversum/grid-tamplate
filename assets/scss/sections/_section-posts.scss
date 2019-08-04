@@ -1,7 +1,10 @@
 .posts__container {
-    max-width: 1300px;
+    max-width: 1340px;
     margin: 0 auto;
-    padding-bottom: 20px;
+    // padding: 0 20px;
+    // padding-bottom: 20px;
+}
+.posts__grid {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
@@ -69,16 +72,20 @@
     }
 }
 .posts {
-    padding: 100px 20px;
+    padding: 100px 0;
     h2 {
-        max-width: 1300px;
-        padding: 0;
+        max-width: 1340px;
         margin-left: auto;
         margin-right: auto;
     }
     &__button {
+        margin-top: 20px;
         display: flex;
         justify-content: center;
+        a {
+            display: block;
+            min-width: 350px;
+        }
     }
 }
 
@@ -86,7 +93,7 @@
     .posts {
         padding: 80px 20px;
     }
-    .posts__container {
+    .posts__grid {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas: "p1 p1 p2"
@@ -96,9 +103,9 @@
 }
 @include md-sm {
     .posts {
-        padding: 60px 22px;
+        padding: 60px 20px;
     }
-    .posts__container {
+    .posts__grid {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
@@ -106,9 +113,9 @@
 }
 @include sm {
     .posts {
-        padding: 60px 22px;
+        padding: 60px 20px;
     }
-    .posts__container {
+    .posts__grid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
         grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";

@@ -102,7 +102,7 @@
     </div>
 
     <div class="skills__button">
-        <a href="#" class="button-dark">View all skills...</a>
+        <a href="#" class="button-dark skills-button">View all skills...</a>
     </div>
   </section>
 
@@ -123,15 +123,22 @@
 
   <section class="form">
     <form class="form__container" action="URL">
-      <input type="text" placeholder="Your name...">
-      <input type="email" placeholder="Your email...">
-      <button class="button-dark" type="submit">Subscribe</button>
+      <div class="form-item">
+        <input type="text" placeholder="Your name...">
+      </div>
+      <div class="form-item">
+        <input type="email" placeholder="Your email...">
+      </div>
+      <div class="form-item">
+        <button class="button-dark" type="submit">Subscribe</button>
+      </div>
     </form>
   </section>
 
   <section class="posts">
-    <h2>Some section of posts</h2>
     <div class="posts__container">
+      <h2>Some section of posts</h2>
+    <div class="posts__grid">
       <a href="#" class="post">
         <div class="post-image" style="background-image: url(assets/img/img-post-1.png)"></div>
         <div class="post-about">
@@ -176,6 +183,7 @@
       </a>
     </div>
     <div class="posts__button"><a href="#" class="button-dark">View all posts...</a></div>
+    </div>
   </section>
 
   <footer class="footer">
