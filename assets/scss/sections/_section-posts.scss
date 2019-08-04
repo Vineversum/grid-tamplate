@@ -1,7 +1,7 @@
 .posts__container {
     max-width: 1340px;
     margin: 0 auto;
-    // padding: 0 20px;
+    padding: 0 20px;
     // padding-bottom: 20px;
 }
 .posts__grid {
@@ -92,7 +92,7 @@
 
 @include lg-md {
     .posts {
-        padding: 80px 20px;
+        padding: 80px 0px;
     }
     .posts__grid {
         grid-template-columns: 1fr 1fr 1fr;
@@ -104,7 +104,7 @@
 }
 @include md-sm {
     .posts {
-        padding: 60px 20px;
+        padding: 60px 0px;
     }
     .posts__grid {
         grid-template-columns: 1fr 1fr;
@@ -114,7 +114,7 @@
 }
 @include sm {
     .posts {
-        padding: 60px 20px;
+        padding: 60px 0px;
     }
     .posts__grid {
         grid-template-columns: 1fr;

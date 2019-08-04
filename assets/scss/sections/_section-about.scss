@@ -47,7 +47,7 @@
         display: none;
     }
     .about {
-        padding: 85px 20px;
+        padding: 85px 0px;
     }
     
 }
@@ -57,7 +57,7 @@
         display: none;
     }
     .about {
-        padding: 60px 22px;
+        padding: 60px 0px;
     }
     .about__container {
         grid-row-gap: 10px;
@@ -70,7 +70,7 @@
 }
 @include sm {
     .about {
-        padding: 58px 22px;
+        padding: 58px 0px;
     }
     .about-article p:nth-child(4) {
         display: none;
